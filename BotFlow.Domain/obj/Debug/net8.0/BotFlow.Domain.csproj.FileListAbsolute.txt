@@ -9,3 +9,4 @@ D:\BotFlow\BotFlow.Domain\obj\Debug\net8.0\BotFlow.Domain.dll
 D:\BotFlow\BotFlow.Domain\obj\Debug\net8.0\refint\BotFlow.Domain.dll
 D:\BotFlow\BotFlow.Domain\obj\Debug\net8.0\BotFlow.Domain.pdb
 D:\BotFlow\BotFlow.Domain\obj\Debug\net8.0\ref\BotFlow.Domain.dll
+D:\BotFlow\BotFlow.Domain\obj\Debug\net8.0\BotFlow.Domain.sourcelink.json

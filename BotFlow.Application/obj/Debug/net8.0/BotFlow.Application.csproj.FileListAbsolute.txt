@@ -15,3 +15,4 @@ D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\BotFlow.Application.dll
 D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\refint\BotFlow.Application.dll
 D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\BotFlow.Application.pdb
 D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\ref\BotFlow.Application.dll
+D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\BotFlow.Application.sourcelink.json

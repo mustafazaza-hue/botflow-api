@@ -189,3 +189,4 @@ D:\BotFlow\BotFlow.API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 D:\BotFlow\BotFlow.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
 D:\BotFlow\BotFlow.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 D:\BotFlow\BotFlow.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\BotFlow\BotFlow.API\obj\Debug\net8.0\BotFlow.API.sourcelink.json

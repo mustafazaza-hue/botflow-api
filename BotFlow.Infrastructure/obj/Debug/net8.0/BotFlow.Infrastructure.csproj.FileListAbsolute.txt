@@ -13,3 +13,4 @@ D:\BotFlow\BotFlow.Infrastructure\obj\Debug\net8.0\BotFlow.Infrastructure.dll
 D:\BotFlow\BotFlow.Infrastructure\obj\Debug\net8.0\refint\BotFlow.Infrastructure.dll
 D:\BotFlow\BotFlow.Infrastructure\obj\Debug\net8.0\BotFlow.Infrastructure.pdb
 D:\BotFlow\BotFlow.Infrastructure\obj\Debug\net8.0\ref\BotFlow.Infrastructure.dll
+D:\BotFlow\BotFlow.Infrastructure\obj\Debug\net8.0\BotFlow.Infrastructure.sourcelink.json

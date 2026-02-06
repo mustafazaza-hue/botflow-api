@@ -41,16 +41,42 @@ builder.Services.AddControllers()
 
 builder.Services.AddEndpointsApiExplorer();
 
-// تكوين CORS - تصحيح الاسم
+// تكوين CORS ديناميكي لكل البيئات
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontend",
-        builder =>
+    options.AddPolicy("AllowAllFrontends",
+        policy =>
         {
-            builder.WithOrigins("http://localhost:3000")
-                   .AllowAnyHeader()
-                   .AllowAnyMethod()
-                   .AllowCredentials();
+            policy.SetIsOriginAllowed(origin =>
+            {
+                // السماح بجميع الأصول المحلية
+                if (origin.StartsWith("http://localhost:") || 
+                    origin.StartsWith("http://127.0.0.1:"))
+                {
+                    return true;
+                }
+                
+                // قائمة بالنطاقات المسموح بها
+                var allowedDomains = new[]
+                {
+                    "vercel.app",
+                    "netlify.app",
+                    "onrender.com",
+                    "railway.app",
+                    "github.io",
+                    "web.app",
+                    "firebaseapp.com",
+                    "azurewebsites.net",
+                    "amazonaws.com",
+                    "amplifyapp.com"
+                };
+                
+                // التحقق إذا كان النطاق مسموحاً به
+                return allowedDomains.Any(domain => origin.EndsWith(domain));
+            })
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
         });
 });
 
@@ -143,8 +169,8 @@ else
 app.UseStaticFiles();
 app.UseRouting();
 
-// ========== التصحيح: استخدم AllowFrontend بدلاً من CorsPolicy ==========
-app.UseCors("AllowFrontend");
+// استخدام سياسة CORS الجديدة
+app.UseCors("AllowAllFrontends");
 
 app.UseAuthentication();
 app.UseAuthorization();
@@ -269,7 +295,7 @@ app.MapGet("/api/health", () => Results.Ok(new
     Database = "SQLite",
     Environment = app.Environment.EnvironmentName,
     EmailVerification = "Disabled (Auto-verified)",
-    CorsPolicy = "AllowFrontend",
+    CorsPolicy = "AllowAllFrontends",
     Endpoints = new {
         SuperAdminLogin = "/api/auth/super-admin/login",
         Health = "/api/health",
@@ -292,7 +318,7 @@ Console.WriteLine($"📡 Environment: {app.Environment.EnvironmentName}");
 Console.WriteLine($"🌍 URL: {app.Urls.FirstOrDefault()}");
 Console.WriteLine($"📚 Swagger UI: {app.Urls.FirstOrDefault()}/swagger");
 Console.WriteLine($"🔐 Super Admin Login: POST {app.Urls.FirstOrDefault()}/api/auth/super-admin/login");
-Console.WriteLine($"🔧 CORS: Enabled for http://localhost:3000");
+Console.WriteLine($"🔧 CORS: Enabled for all frontend domains (localhost, vercel, netlify, etc.)");
 Console.WriteLine($"✉️  Email Verification: DISABLED (Auto-verified for all users)");
 
 await app.RunAsync();

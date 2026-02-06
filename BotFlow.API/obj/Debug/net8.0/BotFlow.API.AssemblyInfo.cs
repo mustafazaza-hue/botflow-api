@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BotFlow.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dfbcda2297d2c843ef64ce0e4c54565c7151ca2")]
 [assembly: System.Reflection.AssemblyProductAttribute("BotFlow.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BotFlow.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
