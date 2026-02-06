@@ -1,0 +1,17 @@
+D:\BotFlow\BotFlow.Application\bin\Debug\net8.0\BotFlow.Application.deps.json
+D:\BotFlow\BotFlow.Application\bin\Debug\net8.0\BotFlow.Application.dll
+D:\BotFlow\BotFlow.Application\bin\Debug\net8.0\BotFlow.Application.pdb
+D:\BotFlow\BotFlow.Application\bin\Debug\net8.0\BotFlow.Domain.dll
+D:\BotFlow\BotFlow.Application\bin\Debug\net8.0\BotFlow.Infrastructure.dll
+D:\BotFlow\BotFlow.Application\bin\Debug\net8.0\BotFlow.Domain.pdb
+D:\BotFlow\BotFlow.Application\bin\Debug\net8.0\BotFlow.Infrastructure.pdb
+D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\BotFlow.Application.csproj.AssemblyReference.cache
+D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\BotFlow.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\BotFlow.Application.AssemblyInfoInputs.cache
+D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\BotFlow.Application.AssemblyInfo.cs
+D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\BotFlow.Application.csproj.CoreCompileInputs.cache
+D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\BotFlow..899534FE.Up2Date
+D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\BotFlow.Application.dll
+D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\refint\BotFlow.Application.dll
+D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\BotFlow.Application.pdb
+D:\BotFlow\BotFlow.Application\obj\Debug\net8.0\ref\BotFlow.Application.dll
